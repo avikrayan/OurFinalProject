@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle mActionBarDrawerToggle;
     private Button navbutton;
     ListView list;
+    String a;
     private String[] array={"cow","dog","cat","mouse"};
 
     @Override
