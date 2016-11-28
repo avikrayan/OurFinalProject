@@ -16,14 +16,15 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle mActionBarDrawerToggle;
     private Button navbutton;
     ListView list;
-    String a;
+    String a,b;
+
     private String[] array={"cow","dog","cat","mouse"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mDrawerLayout= (DrawerLayout) findViewById(R.id.drawer);
+        mDrawerLayout= (DrawerLayout) findViewById(R.id.drawerlayout);
         list= (ListView) findViewById(R.id.mylist);
         list.setAdapter(new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,array));
 
